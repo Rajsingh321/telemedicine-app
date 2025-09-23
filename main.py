@@ -6,11 +6,12 @@ col1, col2, col3 = st.columns(3)
 
 with col2:
     st.markdown("<h1 style='text-align: center;font-size: 60px;'>eSwasthya</h1>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center;font-size: 40px;'>Your Health, Our Priority</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;font-size: 20px;'>Your Health, Our Priority</h1>", unsafe_allow_html=True)
     st.write("Your Health, Our Priority")
     st.video("drvideo1.mp4", format="video/mp4", start_time=0)
     st.video("drvideo2.mp4", format="video/mp4", start_time=0)
     st.video("drvideo3.mp4", format="video/mp4", start_time=0)
+
 
 
 
