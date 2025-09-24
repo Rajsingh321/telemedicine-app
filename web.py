@@ -26,7 +26,7 @@ df = pd.DataFrame(data)
 
 # --- Dashboard Page ---
 if page == "Dashboard":
-    st.image("dash1.png", caption="Disease Trend", use_column_width=True)
+    st.image("dash1.png", use_column_width=True)
     #st.subheader("Disease Cases by District")
     #fig_cases = px.bar(df, x='District', y='Cases', color='Cases', title="Cases Distribution")
     #st.plotly_chart(fig_cases, use_container_width=True)
@@ -63,5 +63,6 @@ elif page == "Reports":
 
 st.sidebar.markdown("---")
 st.sidebar.write("© 2025 Punjab Health Department")
+
 
 
