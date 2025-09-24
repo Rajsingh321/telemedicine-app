@@ -66,7 +66,7 @@ with col2:
         text-align: center;
     }
     .mic-button {
-        font-size: 15px;
+        font-size: 20px;
         padding: 15px 20px;
         border-radius: 20%;
         background-color: #4CAF50;
@@ -84,6 +84,7 @@ with col2:
     )
 
     
+
 
 
 
