@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import plotly.express as px
+import warnings
+warnings.filterwarnings("ignore")
 
 # --- Header ---
 st.set_page_config(page_title="Punjab Health Dashboard", layout="wide")
@@ -60,3 +62,4 @@ elif page == "Reports":
 
 st.sidebar.markdown("---")
 st.sidebar.write("© 2025 Punjab Health Department")
+
