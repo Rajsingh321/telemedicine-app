@@ -10,7 +10,6 @@ col1, col2, col3 = st.columns(3)
 with col2:
     st.markdown("<h1 style='text-align: center;font-size: 60px;'>eSwasthya</h1>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center;font-size: 20px;'>Your Health, Our Priority</h1>", unsafe_allow_html=True)
-    st.write("Your Health, Our Priority")
     st.sidebar.title("👤 User Profile")
     st.sidebar.write("Name = Ramsingh")
     st.sidebar.write("Mobile no. = +918085134393")
@@ -85,6 +84,7 @@ with col2:
     )
 
     
+
 
 
 
