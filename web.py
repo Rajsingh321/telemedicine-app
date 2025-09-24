@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -26,15 +26,16 @@ df = pd.DataFrame(data)
 
 # --- Dashboard Page ---
 if page == "Dashboard":
-    st.subheader("Disease Cases by District")
-    fig_cases = px.bar(df, x='District', y='Cases', color='Cases', title="Cases Distribution")
-    st.plotly_chart(fig_cases, use_container_width=True)
+    st.image("dash1.png", caption="Disease Trend", use_column_width=True)
+    #st.subheader("Disease Cases by District")
+    #fig_cases = px.bar(df, x='District', y='Cases', color='Cases', title="Cases Distribution")
+    #st.plotly_chart(fig_cases, use_container_width=True)
     
-    st.subheader("Medicine Shortage by District")
-    fig_meds = px.bar(df, x='District', y='Medicine Shortage', color='Medicine Shortage',
-                      title="Medicine Shortage")
-    st.plotly_chart(fig_meds, use_container_width=True)
-    
+    #st.subheader("Medicine Shortage by District")
+    #fig_meds = px.bar(df, x='District', y='Medicine Shortage', color='Medicine Shortage',
+                      #title="Medicine Shortage")
+    #st.plotly_chart(fig_meds, use_container_width=True)
+    st.image("dash2.png", caption="Disease Trend", use_column_width=True)
     # Sample Map
     st.subheader("Affected Areas Map (Sample)")
     map_data = pd.DataFrame({
@@ -62,4 +63,5 @@ elif page == "Reports":
 
 st.sidebar.markdown("---")
 st.sidebar.write("© 2025 Punjab Health Department")
+
 
